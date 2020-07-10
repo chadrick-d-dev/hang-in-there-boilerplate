@@ -182,4 +182,3 @@ function inputsToArrays() {
   titles.push(titleInput.value);
   quotes.push(quoteInput.value);
 }
-console.log(inputsToArrays());
