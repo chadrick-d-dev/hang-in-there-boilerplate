@@ -114,9 +114,11 @@ var mainView = document.querySelector(".main-poster");
 var formView = document.querySelector(".poster-form");
 var savedView  = document.querySelector(".saved-posters");
 
-console.log(showSavedButton);
-console.log(savedView);
-
+var showMyPosterButton = document.querySelector(".make-poster");
+var posterImgInput = document.querySelector("#poster-image-url");
+var posterTitleInput = document.querySelector("#poster-title");
+var posterQuoteInput = document.querySelector("#poster-quote");
+console.log(showMyPosterButton);
 // event listeners go here 👇
 
 window.onLoad = displayPoster(currentPoster);
