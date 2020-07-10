@@ -126,6 +126,7 @@ makeYourPosterButton.addEventListener("click", viewForm);
 takeMeBackButton.addEventListener("click", takeMeBack);
 showSavedButton.addEventListener("click", showSaved);
 backToMainButton.addEventListener("click", backToMain);
+showMyPosterButton.addEventListener("click", showMyPoster);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
