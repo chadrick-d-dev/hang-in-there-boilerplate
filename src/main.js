@@ -114,8 +114,10 @@ var mainView = document.querySelector(".main-poster");
 var formView = document.querySelector(".poster-form");
 var savedView  = document.querySelector(".saved-posters");
 
-console.log(showSavedButton);
-console.log(savedView);
+var showMyPosterButton = document.querySelector(".make-poster");
+var imgInput = document.querySelector("#poster-image-url");
+var titleInput = document.querySelector("#poster-title");
+var quoteInput = document.querySelector("#poster-quote");
 
 // event listeners go here 👇
 
@@ -165,3 +167,16 @@ function backToMain() {
   mainView.classList.remove("hidden");
   savedView.classList.add("hidden");
 }
+
+// function showMyPoster() {
+//   event.preventDefault();
+//   takeMeBack();
+//
+// }
+
+function inputsToArrays() {
+  images.push(imgInput.value);
+  titles.push(titleInput.value);
+  quotes.push(quoteInput.value);
+}
+console.log(inputsToArrays());
