@@ -168,11 +168,13 @@ function backToMain() {
   savedView.classList.add("hidden");
 }
 
-// function showMyPoster() {
-//   event.preventDefault();
-//   takeMeBack();
-//
-// }
+function showMyPoster() {
+  event.preventDefault();
+  takeMeBack();
+  inputsToArrays();
+  var createdPoster = new Poster(imgInput.value, titleInput.value, quoteInput.value);
+  displayPoster(createdPoster);
+}
 
 function inputsToArrays() {
   images.push(imgInput.value);
