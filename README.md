@@ -36,17 +36,14 @@ Form page:
 ## Iteration 2 - Creating a New Poster
 
 Form being filled out:
-![screenshot of form](/readme-imgs/form.png)
+![gif of iteration 2 functionality](/ReadMeGifs/iteration-2.gif)
 
-Once poster is saved:
-![screenshot of result](/readme-imgs/form-result.png)
 
-- On the new poster form view, users should be able to fill out the three input fields and then hit the save button
-- When the save button is clicked, several things will happen:
-  - Save the submitted data into the respective arrays (image URL into the images array, etc) so that future random posters can use the user-created data
-  - Use the values from the inputs to create a new instance of our Poster class
-  - Change back to the main poster view (hiding the form view again)
-  - Display the newly created poster image, title, and quote in the main view
+- When user completes the input fields and then clicks the "Show My Poster" button:
+  - The values from the input fields are saved to respective arrays as well as placed in a new Class instantiation of Poster which will be used to display a custom poster on the main view page.
+  - The user is taken back to the main view page.
+  - The custom poster is displayed.
+  - The values from user were also saved (temporarily) in their respective arrays.
 
 ## Iteration 3 - Saving & Viewing Posters
 
