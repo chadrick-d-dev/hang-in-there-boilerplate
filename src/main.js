@@ -189,7 +189,18 @@ function inputsToArrays() {
 }
 
 function savePoster() {
-  savedPosters.push(currentPoster);
+  if (posterNotSaved(currentPoster) === true) {
+    savedPosters.push(currentPoster);
+  }
+}
+
+function posterNotSaved(posterObject) {
+  for (var i=0; i<savedPosters.length; i++) {
+    if (savedPosters[i].id === posterObject.id) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // function displaySavedPoster() {
