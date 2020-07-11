@@ -100,12 +100,16 @@ var quotes = [
 ];
 
 var currentPoster = randomizePoster();
+<<<<<<< HEAD
 
 console.log(currentPoster);
+=======
+>>>>>>> 301a1347f6ece41bb1ddb2ba00d2618dffa9d36b
 var posterImg = document.querySelector(".poster-img");
 var posterTitle = document.querySelector(".poster-title");
 var posterQuote = document.querySelector(".poster-quote");
 
+var showRandomPosterButton = document.querySelector(".show-random");
 var makeYourPosterButton = document.querySelector(".show-form");
 var takeMeBackButton = document.querySelector(".show-main");
 var showSavedButton = document.querySelector(".show-saved");
@@ -125,6 +129,7 @@ var savedPosters = [];
 // event listeners go here 👇
 
 window.onLoad = displayPoster(currentPoster);
+showRandomPosterButton.addEventListener("click", showRandom);
 makeYourPosterButton.addEventListener("click", viewForm);
 takeMeBackButton.addEventListener("click", takeMeBack);
 showSavedButton.addEventListener("click", showSaved);
@@ -152,6 +157,11 @@ function displayPoster(posterObject) {
   posterImg.src = posterObject.imageURL;
   posterTitle.innerText = posterObject.title;
   posterQuote.innerText = posterObject.quote;
+}
+
+function showRandom() {
+  var randomPoster = randomizePoster();
+  displayPoster(randomPoster);
 }
 
 function viewForm() {
