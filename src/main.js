@@ -100,11 +100,6 @@ var quotes = [
 ];
 
 var currentPoster = randomizePoster();
-<<<<<<< HEAD
-
-console.log(currentPoster);
-=======
->>>>>>> 301a1347f6ece41bb1ddb2ba00d2618dffa9d36b
 var posterImg = document.querySelector(".poster-img");
 var posterTitle = document.querySelector(".poster-title");
 var posterQuote = document.querySelector(".poster-quote");
@@ -199,7 +194,7 @@ function inputsToArrays() {
 }
 
 function savePoster() {
-  if (posterNotSaved(currentPoster) === true) {
+  if (posterNotSaved(currentPoster)) {
     savedPosters.push(currentPoster);
   }
 }
