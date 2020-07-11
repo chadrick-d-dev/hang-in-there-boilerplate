@@ -126,6 +126,7 @@ makeYourPosterButton.addEventListener("click", viewForm);
 takeMeBackButton.addEventListener("click", takeMeBack);
 showSavedButton.addEventListener("click", showSaved);
 backToMainButton.addEventListener("click", backToMain);
+showMyPosterButton.addEventListener("click", showMyPoster);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
@@ -168,15 +169,16 @@ function backToMain() {
   savedView.classList.add("hidden");
 }
 
-// function showMyPoster() {
-//   event.preventDefault();
-//   takeMeBack();
-//
-// }
+function showMyPoster() {
+  event.preventDefault();
+  takeMeBack();
+  inputsToArrays();
+  var createdPoster = new Poster(imgInput.value, titleInput.value, quoteInput.value);
+  displayPoster(createdPoster);
+}
 
 function inputsToArrays() {
   images.push(imgInput.value);
   titles.push(titleInput.value);
   quotes.push(quoteInput.value);
 }
-console.log(inputsToArrays());
