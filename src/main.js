@@ -109,15 +109,17 @@ var makeYourPosterButton = document.querySelector(".show-form");
 var takeMeBackButton = document.querySelector(".show-main");
 var showSavedButton = document.querySelector(".show-saved");
 var backToMainButton = document.querySelector(".back-to-main");
+var showMyPosterButton = document.querySelector(".make-poster");
+var savePosterButton = document.querySelector(".save-poster");
 
 var mainView = document.querySelector(".main-poster");
 var formView = document.querySelector(".poster-form");
 var savedView  = document.querySelector(".saved-posters");
-
-var showMyPosterButton = document.querySelector(".make-poster");
+var savedPostersGrid = document.querySelector(".saved-posters-grid");
 var imgInput = document.querySelector("#poster-image-url");
 var titleInput = document.querySelector("#poster-title");
 var quoteInput = document.querySelector("#poster-quote");
+var savedPosters = [];
 
 // event listeners go here 👇
 
@@ -128,6 +130,8 @@ takeMeBackButton.addEventListener("click", takeMeBack);
 showSavedButton.addEventListener("click", showSaved);
 backToMainButton.addEventListener("click", backToMain);
 showMyPosterButton.addEventListener("click", showMyPoster);
+savePosterButton.addEventListener("click", savePoster);
+console.log(savedPosters);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
@@ -188,3 +192,23 @@ function inputsToArrays() {
   titles.push(titleInput.value);
   quotes.push(quoteInput.value);
 }
+
+function savePoster() {
+  if (posterNotSaved(currentPoster)) {
+    savedPosters.push(currentPoster);
+  }
+}
+
+function posterNotSaved(posterObject) {
+  for (var i=0; i<savedPosters.length; i++) {
+    if (savedPosters[i].id === posterObject.id) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// function displaySavedPoster() {
+//   savedPostersGrid.innerHTML = "";
+//
+// }
