@@ -173,6 +173,7 @@ function takeMeBack() {
 function showSaved() {
   mainView.classList.add("hidden");
   savedView.classList.remove("hidden");
+  displaySavedPoster();
 }
 
 function backToMain() {
@@ -207,8 +208,7 @@ function posterNotSaved(posterObject) {
 function savePoster() {
   if (posterNotSaved(currentPoster) == true) {
     savedPosters.push(currentPoster);
-
-  }
+    }
 }
 
 function displaySavedPoster() {
@@ -216,10 +216,10 @@ function displaySavedPoster() {
   for (var i = 0; i < savedPosters.length; i++) {
     var posterObject = savedPosters[i];
     savedPostersGrid.innerHTML +=
-    <section class="mini-poster" id=${posterObject.id}>
-      <img class="mini-poster img" id=${posterObject.id} src=${posterObject.image}>
-      <h2 class="mini-poster h2" id=${posterObject.id}>${posterObject.title}</h2>
-      <h4 class="mini-poster h4" id=${posterObject.id}>${posterObject.quote}</h4>
-    </section>
+    `<div class="mini-poster" id=${posterObject.id}>
+      <img id=${posterObject.id} src=${posterObject.imageURL}>
+      <h2 id=${posterObject.id}>${posterObject.title}</h2>
+      <h4 id=${posterObject.id}>${posterObject.quote}</h4>
+    </div>`
   }
 }
