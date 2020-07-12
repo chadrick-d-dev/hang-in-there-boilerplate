@@ -157,6 +157,7 @@ function displayPoster(posterObject) {
 function showRandom() {
   var randomPoster = randomizePoster();
   displayPoster(randomPoster);
+  currentPoster = randomPoster;
 }
 
 function viewForm() {
@@ -185,6 +186,7 @@ function showMyPoster() {
   inputsToArrays();
   var createdPoster = new Poster(imgInput.value, titleInput.value, quoteInput.value);
   displayPoster(createdPoster);
+  currentPoster = createdPoster;
 }
 
 function inputsToArrays() {
@@ -193,14 +195,8 @@ function inputsToArrays() {
   quotes.push(quoteInput.value);
 }
 
-function savePoster() {
-  if (posterNotSaved(currentPoster)) {
-    savedPosters.push(currentPoster);
-  }
-}
-
 function posterNotSaved(posterObject) {
-  for (var i=0; i<savedPosters.length; i++) {
+  for (var i = 0;  i < savedPosters.length; i++) {
     if (savedPosters[i].id === posterObject.id) {
       return false;
     }
@@ -208,7 +204,22 @@ function posterNotSaved(posterObject) {
   return true;
 }
 
-// function displaySavedPoster() {
-//   savedPostersGrid.innerHTML = "";
-//
-// }
+function savePoster() {
+  if (posterNotSaved(currentPoster) == true) {
+    savedPosters.push(currentPoster);
+
+  }
+}
+
+function displaySavedPoster() {
+  savedPostersGrid.innerHTML = "";
+  for (var i = 0; i < savedPosters.length; i++) {
+    var posterObject = savedPosters[i];
+    savedPostersGrid.innerHTML +=
+    <section class="mini-poster" id=${posterObject.id}>
+      <img class="mini-poster img" id=${posterObject.id} src=${posterObject.image}>
+      <h2 class="mini-poster h2" id=${posterObject.id}>${posterObject.title}</h2>
+      <h4 class="mini-poster h4" id=${posterObject.id}>${posterObject.quote}</h4>
+    </section>
+  }
+}
