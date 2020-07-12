@@ -131,7 +131,7 @@ showSavedButton.addEventListener("click", showSaved);
 backToMainButton.addEventListener("click", backToMain);
 showMyPosterButton.addEventListener("click", showMyPoster);
 savePosterButton.addEventListener("click", savePoster);
-console.log(savedPosters);
+savedPostersGrid.addEventListener("dblclick", deletePoster);
 
 // functions and event handlers go here 👇
 // (we've provided one for you to get you started)!
@@ -222,4 +222,14 @@ function displaySavedPoster() {
       <h4 id=${posterObject.id}>${posterObject.quote}</h4>
     </div>`
   }
+}
+
+function deletePoster(event) {
+  var deletePosterID = event.target.id;
+  for (var i = 0; i < savedPosters.length; i++) {
+    if (savedPosters[i].id === deletePosterID) {
+      savedPosters.splice(i, 1);
+    }
+  }
+  displaySavedPoster();
 }
