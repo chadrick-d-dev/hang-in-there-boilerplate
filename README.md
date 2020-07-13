@@ -63,6 +63,12 @@ Saved posters view:
 
 - From the saved posters view, if a user double clicks a saved poster, it will be deleted
 
+- Pseudocode for iteration 4:
+  -We need to create a function that deletes the object in the array when the user double clicks a displayed poster in the show saved posters view.
+    -we think we will use a FOR LOOP in our function.
+    -we will create a variable inside the function for the targeted object.
+  -we need to create an event listener for a double click.
+
 _Hint: How will you update the data model to achieve this?_
 
 ## Optional Extensions - Gettin' fancy
