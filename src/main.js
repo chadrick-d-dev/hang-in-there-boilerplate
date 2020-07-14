@@ -152,8 +152,7 @@ function displayPoster(posterObject) {
   posterQuote.innerText = posterObject.quote;
 }
 
-function showRandom() {
-  var randomPoster = randomizePoster();
+function showRandom() {  
   displayPoster(randomPoster);
   currentPoster = randomPoster;
 }
