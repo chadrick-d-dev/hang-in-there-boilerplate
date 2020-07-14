@@ -103,7 +103,6 @@ var currentPoster = randomizePoster();
 var posterImg = document.querySelector(".poster-img");
 var posterTitle = document.querySelector(".poster-title");
 var posterQuote = document.querySelector(".poster-quote");
-
 var showRandomPosterButton = document.querySelector(".show-random");
 var makeYourPosterButton = document.querySelector(".show-form");
 var takeMeBackButton = document.querySelector(".show-main");
@@ -111,7 +110,6 @@ var showSavedButton = document.querySelector(".show-saved");
 var backToMainButton = document.querySelector(".back-to-main");
 var showMyPosterButton = document.querySelector(".make-poster");
 var savePosterButton = document.querySelector(".save-poster");
-
 var mainView = document.querySelector(".main-poster");
 var formView = document.querySelector(".poster-form");
 var savedView  = document.querySelector(".saved-posters");
