@@ -50,10 +50,10 @@ Form being filled out:
 
 ## Iteration 3 - Saving & Viewing Posters
 
-- On July 11th we began working on this iteration, and completed this iteration on July 12th.
+- On July 11th 2020 we began working on this iteration, and completed this iteration on July 12th 2020.
 
 Saved posters view:
-![gif of iteration 3 functionality](/ReadMeGifs/iteration-3.gif)
+![gif of iteration 3 functionality](/ReadMeGifs/iteration3.gif)
 
 - When a user clicks "Save This Poster" the current poster is saved as an object to the savedPosters array.
 - A poster cannot be saved more than once, based on comparing the poster id to the the id's of the posters in the array.
@@ -61,15 +61,12 @@ Saved posters view:
 
 ## Iteration 4 - Deleting Saved Posters
 
-- From the saved posters view, if a user double clicks a saved poster, it will be deleted
+- On July 12th 2020 we began working on this iteration, and completed this iteration on July 13th 2020.
 
-- Pseudocode for iteration 4:
-  -We need to create a function that deletes the object in the array when the user double clicks a displayed poster in the show saved posters view.
-    -we think we will use a FOR LOOP in our function.
-    -we will create a variable inside the function for the targeted object.
-  -we need to create an event listener for a double click.
+User saving posters, then viewing saved posters and deleting posters by double clicking on them:
+![gif of iteration 4 functionality](/ReadMeGifs/iteration4.gif)
 
-_Hint: How will you update the data model to achieve this?_
+- When a user is on the saved posters view they can now double click on a poster, which results in the deletion of that specific poster from the saved posters view and the savedPosters array.
 
 ## Optional Extensions - Gettin' fancy
 
