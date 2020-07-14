@@ -152,7 +152,8 @@ function displayPoster(posterObject) {
   posterQuote.innerText = posterObject.quote;
 }
 
-function showRandom() {  
+function showRandom() {
+  var randomPoster = randomizePoster();
   displayPoster(randomPoster);
   currentPoster = randomPoster;
 }
@@ -203,7 +204,7 @@ function posterNotSaved(posterObject) {
 }
 
 function savePoster() {
-  if (posterNotSaved(currentPoster) == true) {
+  if (posterNotSaved(currentPoster)) {
     savedPosters.push(currentPoster);
     }
 }
