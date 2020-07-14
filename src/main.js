@@ -225,7 +225,6 @@ function displaySavedPoster() {
 }
 
 function deletePoster(event) {
-  // var deletePosterID = event.target.id;
   for (var i = 0; i < savedPosters.length; i++) {
     if (savedPosters[i].id == event.target.id) {
       savedPosters.splice(i, 1);
