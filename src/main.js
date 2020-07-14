@@ -216,18 +216,18 @@ function displaySavedPoster() {
   for (var i = 0; i < savedPosters.length; i++) {
     var posterObject = savedPosters[i];
     savedPostersGrid.innerHTML +=
-    `<div class="mini-poster" id=${posterObject.id}>
+    `<section class="mini-poster" id=${posterObject.id}>
       <img id=${posterObject.id} src=${posterObject.imageURL}>
       <h2 id=${posterObject.id}>${posterObject.title}</h2>
       <h4 id=${posterObject.id}>${posterObject.quote}</h4>
-    </div>`
+    </section>`
   }
 }
 
 function deletePoster(event) {
-  var deletePosterID = event.target.id;
+  // var deletePosterID = event.target.id;
   for (var i = 0; i < savedPosters.length; i++) {
-    if (savedPosters[i].id === deletePosterID) {
+    if (savedPosters[i].id == event.target.id) {
       savedPosters.splice(i, 1);
     }
   }
