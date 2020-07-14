@@ -6,6 +6,8 @@ A boilerplate repo.
 
 - On July 8, 2020 and July 9, 2020 we completed iteration 0 by creating variables, functions, and an event listener in order to get the Poster image, title, and quote to display randomly on load of page.
 
+Random poster appears on page load: 
+
 ![gif of main page poster upon load](/ReadMeGifs/PageLoad.gif)
 
 ### Iteration 1 - Switching Views
@@ -14,22 +16,26 @@ Form page:
 
 - On July 9, 2020 we completed iteration 1 by creating variables, functions, and event listeners that targeted buttons to change page views by being clicked.
 
-"Make Your Own Poster" Button Click:
+"Make Your Own Poster" Button Click: 
+
 ![gif of Make Your Own Poster Button being clicked](/ReadMeGifs/viewForm.gif)
 
 - Here we click the Make Your Own Poster button, which takes the user from the main page view to the form view.
 
-"Show Saved Posters" Button Click:
+"Show Saved Posters" Button Click: 
+
 ![gif of View Saved Posters button being clicked](/ReadMeGifs/showSavedPostersButton.gif)
 
 - Here we click the View Saved Posters button, which takes the user from the main page view to the saved posters view.
 
-"Nevermind, Take Me Back!" Button Click:
+"Nevermind, Take Me Back!" Button Click: 
+
 ![gif of Nevermind, take me back! button being clicked](/ReadMeGifs/takeMeBack.gif)
 
 - Here we click the Nevermind, take me back! button, which takes the user from the form view to the main page view.
 
-"Back To Main" Button Click:
+"Back To Main" Button Click: 
+
 ![gif of Back to Main button being clicked](/ReadMeGifs/backToMainButton.gif)
 
 - Here we click the Back to Main button, which takes the user from the saved posters view to the main page view.
@@ -38,7 +44,8 @@ Form page:
 
 - We Began work on this iteration on July 10th 2020, and completed it on July 11th 2020.
 
-Form being filled out:
+Form being filled out: 
+
 ![gif of iteration 2 functionality](/ReadMeGifs/iteration-2.gif)
 
 
@@ -52,7 +59,8 @@ Form being filled out:
 
 - On July 11th 2020 we began working on this iteration, and completed this iteration on July 12th 2020.
 
-Saved posters view:
+Saved posters view: 
+
 ![gif of iteration 3 functionality](/ReadMeGifs/iteration3.gif)
 
 - When a user clicks "Save This Poster" the current poster is saved as an object to the savedPosters array.
@@ -63,7 +71,8 @@ Saved posters view:
 
 - On July 12th 2020 we began working on this iteration, and completed this iteration on July 13th 2020.
 
-User saving posters, then viewing saved posters and deleting posters by double clicking on them:
+User saving posters, then viewing saved posters and deleting posters by double clicking on them: 
+
 ![gif of iteration 4 functionality](/ReadMeGifs/iteration4.gif)
 
 - When a user is on the saved posters view they can now double click on a poster, which results in the deletion of that specific poster from the saved posters view and the savedPosters array.
