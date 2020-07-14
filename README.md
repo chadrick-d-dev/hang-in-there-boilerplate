@@ -2,6 +2,21 @@
 
 A boilerplate repo.
 
+## Purpose
+
+- To develop skill set in creating clean and dry javascript, through creating variables, functions, and event listeners to make a non-functional html/css design work in a desired way.
+
+## Contributors
+
+- The contributors for this project were Sarah Osgood, and Chad (Chadrick) Dickerson.
+- Sarah's Github: https://github.com/saraho1123
+- Chad's Github: https://github.com/chadrick-d-dev
+
+## Links
+- Repo: https://github.com/chadrick-d-dev/hang-in-there-boilerplate
+- Deployed Page: https://chadrick-d-dev.github.io/hang-in-there-boilerplate/
+- DTR: https://gist.github.com/chadrick-d-dev/98dba1f2955cd3cebea3c21c114faccb
+
 ### Iteration 0 - Main Page
 
 - On July 8, 2020 and July 9, 2020 we completed iteration 0 by creating variables, functions, and an event listener in order to get the Poster image, title, and quote to display randomly on load of page.
