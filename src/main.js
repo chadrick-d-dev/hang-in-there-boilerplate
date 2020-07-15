@@ -204,7 +204,7 @@ function posterNotSaved(posterObject) {
 }
 
 function savePoster() {
-  if (posterNotSaved(currentPoster) == true) {
+  if (posterNotSaved(currentPoster)) {
     savedPosters.push(currentPoster);
     }
 }
